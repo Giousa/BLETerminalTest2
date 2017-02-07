@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+             >
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:text="搜索设备"
+        android:gravity="center"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dp"
+       />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蓝牙搜索"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+         />
+        <Button
+            android:id="@+id/button_tosearch_bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:layout_alignParentRight="true"
+            android:text="搜索"
+
+            android:layout_marginRight="15dip"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开蓝牙搜索"
+
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="15dip"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发现设备"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="15dip"/>
+
+    <ListView android:id="@+id/new_devices"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:visibility="invisible"
+
+        />
+</LinearLayout>
